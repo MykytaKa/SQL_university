@@ -29,10 +29,12 @@ CREATE TABLE schedule (
 
 DROP TABLE IF EXISTS stations;
 CREATE TABLE stations (
-  id int(11) NOT NULL AUTO_INCREMENT,
+  id int(256) NOT NULL AUTO_INCREMENT,
   name varchar(255) NOT NULL,
   latitude decimal(10,6) NOT NULL,
   longitude decimal(10,6) NOT NULL,
+  next_station_id int(256) DEFAULT NULL,
+  prev_station_id int(256) DEFAULT NULL,
   PRIMARY KEY (id)
 ) 
 
