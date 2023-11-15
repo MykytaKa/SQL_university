@@ -11,6 +11,8 @@ CREATE TABLE lines (
   id int(256) NOT NULL AUTO_INCREMENT,
   name varchar(255) NOT NULL,
   color varchar(255) NOT NULL,
+  start_station_id int(256) NOT NULL,
+  end_station_id int(256) NOT NULL,
   PRIMARY KEY (line_id)
 ) 
 
