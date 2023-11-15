@@ -31,7 +31,7 @@ CREATE TABLE stations (
   name varchar(255) NOT NULL,
   latitude decimal(10,6) NOT NULL,
   longitude decimal(10,6) NOT NULL,
-  PRIMARY KEY (station_id)
+  PRIMARY KEY (id)
 ) 
 
 
