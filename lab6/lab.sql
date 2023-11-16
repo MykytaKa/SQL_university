@@ -27,8 +27,8 @@ CREATE TABLE stations (
   PRIMARY KEY (id)
 ) 
 
-DROP TABLE IF EXISTS connections;
-CREATE TABLE connections (
+DROP TABLE IF EXISTS intersections;
+CREATE TABLE intersections (
   id INT(10) NOT NULL AUTO_INCREMENT,
   first_station_id INT(10) NOT NULL,
   second_station_id INT(10) NOT NULL,
